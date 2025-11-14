@@ -8,6 +8,9 @@ const skills = [
   { name: "TypeScript", logo: "🔷", level: "Advanced" },
   { name: "CSS/Tailwind", logo: "🎨", level: "Advanced" },
   { name: "Node.js", logo: "🟢", level: "Intermediate" },
+  { name: "Express", logo: "⚡", level: "Intermediate" },
+  { name: "MongoDB", logo: "🍃", level: "Intermediate" },
+  { name: "SQL", logo: "🗄️", level: "Intermediate" },
 ];
 
 const projects = [
@@ -48,7 +51,7 @@ export default function Page() {
         {/* Hero Section */}
         <section className="container hero">
           <div className="left">
-            <h2>Hi, I'm Your Name</h2>
+            <h2>Hi, I'm Nagesh Babu</h2>
             <p>
               I build beautiful, responsive web applications with modern technologies. 
               Passionate about creating user-friendly experiences and clean code.
@@ -75,12 +78,12 @@ export default function Page() {
         {/* Skills Section */}
         <section id="skills" className="container">
           <h3>Skills</h3>
-          <div className="skills-grid">
+          <div className="flex gap-[30px]">
             {skills.map((skill) => (
-              <div key={skill.name} className="skill-card">
+              <div key={skill.name} className="skill-card flex justify-center items-center">
                 <div className="skill-logo">{skill.logo}</div>
                 <h4>{skill.name}</h4>
-                <p>{skill.level}</p>
+              
               </div>
             ))}
           </div>
