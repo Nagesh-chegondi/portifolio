@@ -1,38 +1,10 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { skills } from "../public/logos";
+import { Projects } from "../assets/project";
 
 
 
-const projects = [
-  {
-    id: 1,
-    title: "E-commerce Platform",
-    category: "Full Stack Development",
-    description: "A comprehensive e-commerce solution engineered for scalability. Features include a real-time inventory system, secure payment gateway integration, and a high-performance product catalog.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=1600&h=1200&fit=crop",
-    link: "#",
-    tech: ["Next.js", "Stripe", "PostgreSQL"]
-  },
-  {
-    id: 2,
-    title: "Task AI",
-    category: "Productivity Tool",
-    description: "An intelligent task management application leveraging machine learning to prioritize workflows. Includes collaborative features and real-time synchronization across devices.",
-    image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1600&h=1200&fit=crop",
-    link: "#",
-    tech: ["React", "Firebase", "TensorFlow.js"]
-  },
-  {
-    id: 3,
-    title: "Financial Analytics",
-    category: "Data Visualization",
-    description: "A robust dashboard for visualizing complex financial data. Provides interactive charts, real-time market updates, and portfolio tracking capabilities for investment firms.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&h=1200&fit=crop",
-    link: "#",
-    tech: ["D3.js", "Vue", "Python"]
-  }
-];
 
 export default function Page() {
   return (
@@ -100,7 +72,7 @@ export default function Page() {
             </h2>
 
             <div className="flex gap-[30px] justify-center flex-wrap">
-              {projects.map((project) => (
+              {Projects.map((project) => (
                 <div
                   key={project.id}
                   className="rounded-[12px] w-[300px] h-[400px] md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)]
